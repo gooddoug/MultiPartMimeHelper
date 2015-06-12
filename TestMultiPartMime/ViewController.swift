@@ -14,7 +14,7 @@ class ViewController: UIViewController, NSURLConnectionDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         let img = UIImage(named: "ring")!
-        let multiPartMime = MultiPartMime(dict: ["name":MultiPartPart.StringWrapper("ring.png"), "file":MultiPartPart.Image(img, "ring.png")])
+        let multiPartMime = MultiPartMime(dict: ["name":MultiPartPart.StringWrapper("ring.png"), "file":MultiPartPart.PNGImage(img, "ring.png")])
         var req = NSMutableURLRequest(URL: NSURL(string:"http://localhost:4567/upload")!)
         req.HTTPMethod = "POST"
         req.HTTPBody = multiPartMime.multiPartData

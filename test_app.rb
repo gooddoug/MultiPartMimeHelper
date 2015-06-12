@@ -1,4 +1,8 @@
 # test_app.rb
+# This is a simple web service that accepts a multipart file for testing
+# gem install sinatra; gem install haml
+# ruby test_app.rb
+
 require 'sinatra'
 require 'haml'
 
