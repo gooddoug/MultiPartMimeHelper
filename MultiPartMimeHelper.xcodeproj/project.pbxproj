@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF3DB8601B2A5CC400C1BD15 /* MultiPartMimeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = EF3DB85F1B2A5CC400C1BD15 /* MultiPartMimeHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF3DB8661B2A5CC400C1BD15 /* MultiPartMimeHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3DB85A1B2A5CC400C1BD15 /* MultiPartMimeHelper.framework */; };
+		EF3DB86D1B2A5CC400C1BD15 /* MultiPartMimeHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3DB86C1B2A5CC400C1BD15 /* MultiPartMimeHelperTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF3DB8671B2A5CC400C1BD15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF3DB8511B2A5CC400C1BD15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF3DB8591B2A5CC400C1BD15;
+			remoteInfo = MultiPartMimeHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF3DB85A1B2A5CC400C1BD15 /* MultiPartMimeHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiPartMimeHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF3DB85E1B2A5CC400C1BD15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF3DB85F1B2A5CC400C1BD15 /* MultiPartMimeHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiPartMimeHelper.h; sourceTree = "<group>"; };
+		EF3DB8651B2A5CC400C1BD15 /* MultiPartMimeHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiPartMimeHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF3DB86B1B2A5CC400C1BD15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF3DB86C1B2A5CC400C1BD15 /* MultiPartMimeHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPartMimeHelperTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF3DB8561B2A5CC400C1BD15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF3DB8621B2A5CC400C1BD15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF3DB8661B2A5CC400C1BD15 /* MultiPartMimeHelper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF3DB8501B2A5CC400C1BD15 = {
+			isa = PBXGroup;
+			children = (
+				EF3DB85C1B2A5CC400C1BD15 /* MultiPartMimeHelper */,
+				EF3DB8691B2A5CC400C1BD15 /* MultiPartMimeHelperTests */,
+				EF3DB85B1B2A5CC400C1BD15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF3DB85B1B2A5CC400C1BD15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF3DB85A1B2A5CC400C1BD15 /* MultiPartMimeHelper.framework */,
+				EF3DB8651B2A5CC400C1BD15 /* MultiPartMimeHelperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF3DB85C1B2A5CC400C1BD15 /* MultiPartMimeHelper */ = {
+			isa = PBXGroup;
+			children = (
+				EF3DB85F1B2A5CC400C1BD15 /* MultiPartMimeHelper.h */,
+				EF3DB85D1B2A5CC400C1BD15 /* Supporting Files */,
+			);
+			path = MultiPartMimeHelper;
+			sourceTree = "<group>";
+		};
+		EF3DB85D1B2A5CC400C1BD15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF3DB85E1B2A5CC400C1BD15 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF3DB8691B2A5CC400C1BD15 /* MultiPartMimeHelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF3DB86C1B2A5CC400C1BD15 /* MultiPartMimeHelperTests.swift */,
+				EF3DB86A1B2A5CC400C1BD15 /* Supporting Files */,
+			);
+			path = MultiPartMimeHelperTests;
+			sourceTree = "<group>";
+		};
+		EF3DB86A1B2A5CC400C1BD15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF3DB86B1B2A5CC400C1BD15 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EF3DB8571B2A5CC400C1BD15 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF3DB8601B2A5CC400C1BD15 /* MultiPartMimeHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EF3DB8591B2A5CC400C1BD15 /* MultiPartMimeHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF3DB8701B2A5CC400C1BD15 /* Build configuration list for PBXNativeTarget "MultiPartMimeHelper" */;
+			buildPhases = (
+				EF3DB8551B2A5CC400C1BD15 /* Sources */,
+				EF3DB8561B2A5CC400C1BD15 /* Frameworks */,
+				EF3DB8571B2A5CC400C1BD15 /* Headers */,
+				EF3DB8581B2A5CC400C1BD15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiPartMimeHelper;
+			productName = MultiPartMimeHelper;
+			productReference = EF3DB85A1B2A5CC400C1BD15 /* MultiPartMimeHelper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF3DB8641B2A5CC400C1BD15 /* MultiPartMimeHelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF3DB8731B2A5CC400C1BD15 /* Build configuration list for PBXNativeTarget "MultiPartMimeHelperTests" */;
+			buildPhases = (
+				EF3DB8611B2A5CC400C1BD15 /* Sources */,
+				EF3DB8621B2A5CC400C1BD15 /* Frameworks */,
+				EF3DB8631B2A5CC400C1BD15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF3DB8681B2A5CC400C1BD15 /* PBXTargetDependency */,
+			);
+			name = MultiPartMimeHelperTests;
+			productName = MultiPartMimeHelperTests;
+			productReference = EF3DB8651B2A5CC400C1BD15 /* MultiPartMimeHelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF3DB8511B2A5CC400C1BD15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Good Doug";
+				TargetAttributes = {
+					EF3DB8591B2A5CC400C1BD15 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					EF3DB8641B2A5CC400C1BD15 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = EF3DB8541B2A5CC400C1BD15 /* Build configuration list for PBXProject "MultiPartMimeHelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EF3DB8501B2A5CC400C1BD15;
+			productRefGroup = EF3DB85B1B2A5CC400C1BD15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF3DB8591B2A5CC400C1BD15 /* MultiPartMimeHelper */,
+				EF3DB8641B2A5CC400C1BD15 /* MultiPartMimeHelperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF3DB8581B2A5CC400C1BD15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF3DB8631B2A5CC400C1BD15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF3DB8551B2A5CC400C1BD15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF3DB8611B2A5CC400C1BD15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF3DB86D1B2A5CC400C1BD15 /* MultiPartMimeHelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF3DB8681B2A5CC400C1BD15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF3DB8591B2A5CC400C1BD15 /* MultiPartMimeHelper */;
+			targetProxy = EF3DB8671B2A5CC400C1BD15 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EF3DB86E1B2A5CC400C1BD15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EF3DB86F1B2A5CC400C1BD15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EF3DB8711B2A5CC400C1BD15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MultiPartMimeHelper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EF3DB8721B2A5CC400C1BD15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MultiPartMimeHelper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EF3DB8741B2A5CC400C1BD15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MultiPartMimeHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF3DB8751B2A5CC400C1BD15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MultiPartMimeHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF3DB8541B2A5CC400C1BD15 /* Build configuration list for PBXProject "MultiPartMimeHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF3DB86E1B2A5CC400C1BD15 /* Debug */,
+				EF3DB86F1B2A5CC400C1BD15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF3DB8701B2A5CC400C1BD15 /* Build configuration list for PBXNativeTarget "MultiPartMimeHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF3DB8711B2A5CC400C1BD15 /* Debug */,
+				EF3DB8721B2A5CC400C1BD15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF3DB8731B2A5CC400C1BD15 /* Build configuration list for PBXNativeTarget "MultiPartMimeHelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF3DB8741B2A5CC400C1BD15 /* Debug */,
+				EF3DB8751B2A5CC400C1BD15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF3DB8511B2A5CC400C1BD15 /* Project object */;
+}
