@@ -10,6 +10,17 @@
 		EF3DB8601B2A5CC400C1BD15 /* MultiPartMimeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = EF3DB85F1B2A5CC400C1BD15 /* MultiPartMimeHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF3DB8661B2A5CC400C1BD15 /* MultiPartMimeHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3DB85A1B2A5CC400C1BD15 /* MultiPartMimeHelper.framework */; };
 		EF3DB86D1B2A5CC400C1BD15 /* MultiPartMimeHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3DB86C1B2A5CC400C1BD15 /* MultiPartMimeHelperTests.swift */; };
+		EF3DB8771B2A5D3600C1BD15 /* MultiPartMime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3DB8761B2A5D3600C1BD15 /* MultiPartMime.swift */; };
+		EF3DB8791B2A71B200C1BD15 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3DB8781B2A71B200C1BD15 /* Helpers.swift */; };
+		EF3DB87C1B2A726A00C1BD15 /* MutliPartPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3DB87B1B2A726A00C1BD15 /* MutliPartPart.swift */; };
+		EF3DB8891B2AA7B800C1BD15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3DB8881B2AA7B800C1BD15 /* AppDelegate.swift */; };
+		EF3DB88B1B2AA7B800C1BD15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3DB88A1B2AA7B800C1BD15 /* ViewController.swift */; };
+		EF3DB88E1B2AA7B800C1BD15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3DB88C1B2AA7B800C1BD15 /* Main.storyboard */; };
+		EF3DB8901B2AA7B800C1BD15 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF3DB88F1B2AA7B800C1BD15 /* Images.xcassets */; };
+		EF3DB8931B2AA7B800C1BD15 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF3DB8911B2AA7B800C1BD15 /* LaunchScreen.xib */; };
+		EF3DB89F1B2AA7B800C1BD15 /* TestMultiPartMimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3DB89E1B2AA7B800C1BD15 /* TestMultiPartMimeTests.swift */; };
+		EF3DB8A61B2AA7D000C1BD15 /* MultiPartMimeHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3DB85A1B2A5CC400C1BD15 /* MultiPartMimeHelper.framework */; };
+		EF3DB8A81B2AA80D00C1BD15 /* ring.png in Resources */ = {isa = PBXBuildFile; fileRef = EF3DB8A71B2AA80D00C1BD15 /* ring.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,6 +31,13 @@
 			remoteGlobalIDString = EF3DB8591B2A5CC400C1BD15;
 			remoteInfo = MultiPartMimeHelper;
 		};
+		EF3DB8991B2AA7B800C1BD15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF3DB8511B2A5CC400C1BD15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF3DB8831B2AA7B700C1BD15;
+			remoteInfo = TestMultiPartMime;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +47,22 @@
 		EF3DB8651B2A5CC400C1BD15 /* MultiPartMimeHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiPartMimeHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF3DB86B1B2A5CC400C1BD15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF3DB86C1B2A5CC400C1BD15 /* MultiPartMimeHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPartMimeHelperTests.swift; sourceTree = "<group>"; };
+		EF3DB8761B2A5D3600C1BD15 /* MultiPartMime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPartMime.swift; sourceTree = "<group>"; };
+		EF3DB8781B2A71B200C1BD15 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		EF3DB87B1B2A726A00C1BD15 /* MutliPartPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutliPartPart.swift; sourceTree = "<group>"; };
+		EF3DB87E1B2A761100C1BD15 /* TestPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TestPlayground.playground; sourceTree = "<group>"; };
+		EF3DB8841B2AA7B700C1BD15 /* TestMultiPartMime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMultiPartMime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF3DB8871B2AA7B800C1BD15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF3DB8881B2AA7B800C1BD15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF3DB88A1B2AA7B800C1BD15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF3DB88D1B2AA7B800C1BD15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF3DB88F1B2AA7B800C1BD15 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF3DB8921B2AA7B800C1BD15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EF3DB8981B2AA7B800C1BD15 /* TestMultiPartMimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestMultiPartMimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF3DB89D1B2AA7B800C1BD15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF3DB89E1B2AA7B800C1BD15 /* TestMultiPartMimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMultiPartMimeTests.swift; sourceTree = "<group>"; };
+		EF3DB8A71B2AA80D00C1BD15 /* ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ring.png; sourceTree = "<group>"; };
+		EF3DB8A91B2ABB0900C1BD15 /* test_app.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = test_app.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,14 +81,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF3DB8811B2AA7B700C1BD15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF3DB8A61B2AA7D000C1BD15 /* MultiPartMimeHelper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF3DB8951B2AA7B800C1BD15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		EF3DB8501B2A5CC400C1BD15 = {
 			isa = PBXGroup;
 			children = (
+				EF3DB87F1B2AA78D00C1BD15 /* TestApp */,
 				EF3DB85C1B2A5CC400C1BD15 /* MultiPartMimeHelper */,
 				EF3DB8691B2A5CC400C1BD15 /* MultiPartMimeHelperTests */,
+				EF3DB89B1B2AA7B800C1BD15 /* TestMultiPartMimeTests */,
 				EF3DB85B1B2A5CC400C1BD15 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +115,8 @@
 			children = (
 				EF3DB85A1B2A5CC400C1BD15 /* MultiPartMimeHelper.framework */,
 				EF3DB8651B2A5CC400C1BD15 /* MultiPartMimeHelperTests.xctest */,
+				EF3DB8841B2AA7B700C1BD15 /* TestMultiPartMime.app */,
+				EF3DB8981B2AA7B800C1BD15 /* TestMultiPartMimeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +124,10 @@
 		EF3DB85C1B2A5CC400C1BD15 /* MultiPartMimeHelper */ = {
 			isa = PBXGroup;
 			children = (
+				EF3DB8761B2A5D3600C1BD15 /* MultiPartMime.swift */,
+				EF3DB87B1B2A726A00C1BD15 /* MutliPartPart.swift */,
+				EF3DB87E1B2A761100C1BD15 /* TestPlayground.playground */,
+				EF3DB8781B2A71B200C1BD15 /* Helpers.swift */,
 				EF3DB85F1B2A5CC400C1BD15 /* MultiPartMimeHelper.h */,
 				EF3DB85D1B2A5CC400C1BD15 /* Supporting Files */,
 			);
@@ -98,6 +155,54 @@
 			isa = PBXGroup;
 			children = (
 				EF3DB86B1B2A5CC400C1BD15 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF3DB87F1B2AA78D00C1BD15 /* TestApp */ = {
+			isa = PBXGroup;
+			children = (
+				EF3DB8A91B2ABB0900C1BD15 /* test_app.rb */,
+				EF3DB8851B2AA7B800C1BD15 /* TestMultiPartMime */,
+			);
+			name = TestApp;
+			sourceTree = "<group>";
+		};
+		EF3DB8851B2AA7B800C1BD15 /* TestMultiPartMime */ = {
+			isa = PBXGroup;
+			children = (
+				EF3DB8881B2AA7B800C1BD15 /* AppDelegate.swift */,
+				EF3DB88A1B2AA7B800C1BD15 /* ViewController.swift */,
+				EF3DB88C1B2AA7B800C1BD15 /* Main.storyboard */,
+				EF3DB88F1B2AA7B800C1BD15 /* Images.xcassets */,
+				EF3DB8911B2AA7B800C1BD15 /* LaunchScreen.xib */,
+				EF3DB8861B2AA7B800C1BD15 /* Supporting Files */,
+			);
+			path = TestMultiPartMime;
+			sourceTree = "<group>";
+		};
+		EF3DB8861B2AA7B800C1BD15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF3DB8A71B2AA80D00C1BD15 /* ring.png */,
+				EF3DB8871B2AA7B800C1BD15 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF3DB89B1B2AA7B800C1BD15 /* TestMultiPartMimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF3DB89E1B2AA7B800C1BD15 /* TestMultiPartMimeTests.swift */,
+				EF3DB89C1B2AA7B800C1BD15 /* Supporting Files */,
+			);
+			path = TestMultiPartMimeTests;
+			sourceTree = "<group>";
+		};
+		EF3DB89C1B2AA7B800C1BD15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF3DB89D1B2AA7B800C1BD15 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -152,6 +257,41 @@
 			productReference = EF3DB8651B2A5CC400C1BD15 /* MultiPartMimeHelperTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		EF3DB8831B2AA7B700C1BD15 /* TestMultiPartMime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF3DB8A01B2AA7B800C1BD15 /* Build configuration list for PBXNativeTarget "TestMultiPartMime" */;
+			buildPhases = (
+				EF3DB8801B2AA7B700C1BD15 /* Sources */,
+				EF3DB8811B2AA7B700C1BD15 /* Frameworks */,
+				EF3DB8821B2AA7B700C1BD15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestMultiPartMime;
+			productName = TestMultiPartMime;
+			productReference = EF3DB8841B2AA7B700C1BD15 /* TestMultiPartMime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF3DB8971B2AA7B800C1BD15 /* TestMultiPartMimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF3DB8A31B2AA7B800C1BD15 /* Build configuration list for PBXNativeTarget "TestMultiPartMimeTests" */;
+			buildPhases = (
+				EF3DB8941B2AA7B800C1BD15 /* Sources */,
+				EF3DB8951B2AA7B800C1BD15 /* Frameworks */,
+				EF3DB8961B2AA7B800C1BD15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF3DB89A1B2AA7B800C1BD15 /* PBXTargetDependency */,
+			);
+			name = TestMultiPartMimeTests;
+			productName = TestMultiPartMimeTests;
+			productReference = EF3DB8981B2AA7B800C1BD15 /* TestMultiPartMimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -167,6 +307,13 @@
 					EF3DB8641B2A5CC400C1BD15 = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
+					EF3DB8831B2AA7B700C1BD15 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					EF3DB8971B2AA7B800C1BD15 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = EF3DB8831B2AA7B700C1BD15;
+					};
 				};
 			};
 			buildConfigurationList = EF3DB8541B2A5CC400C1BD15 /* Build configuration list for PBXProject "MultiPartMimeHelper" */;
@@ -175,6 +322,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = EF3DB8501B2A5CC400C1BD15;
 			productRefGroup = EF3DB85B1B2A5CC400C1BD15 /* Products */;
@@ -183,6 +331,8 @@
 			targets = (
 				EF3DB8591B2A5CC400C1BD15 /* MultiPartMimeHelper */,
 				EF3DB8641B2A5CC400C1BD15 /* MultiPartMimeHelperTests */,
+				EF3DB8831B2AA7B700C1BD15 /* TestMultiPartMime */,
+				EF3DB8971B2AA7B800C1BD15 /* TestMultiPartMimeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +352,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF3DB8821B2AA7B700C1BD15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF3DB88E1B2AA7B800C1BD15 /* Main.storyboard in Resources */,
+				EF3DB8931B2AA7B800C1BD15 /* LaunchScreen.xib in Resources */,
+				EF3DB8901B2AA7B800C1BD15 /* Images.xcassets in Resources */,
+				EF3DB8A81B2AA80D00C1BD15 /* ring.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF3DB8961B2AA7B800C1BD15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -209,6 +377,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF3DB8771B2A5D3600C1BD15 /* MultiPartMime.swift in Sources */,
+				EF3DB8791B2A71B200C1BD15 /* Helpers.swift in Sources */,
+				EF3DB87C1B2A726A00C1BD15 /* MutliPartPart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +391,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF3DB8801B2AA7B700C1BD15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF3DB88B1B2AA7B800C1BD15 /* ViewController.swift in Sources */,
+				EF3DB8891B2AA7B800C1BD15 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF3DB8941B2AA7B800C1BD15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF3DB89F1B2AA7B800C1BD15 /* TestMultiPartMimeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -228,7 +416,31 @@
 			target = EF3DB8591B2A5CC400C1BD15 /* MultiPartMimeHelper */;
 			targetProxy = EF3DB8671B2A5CC400C1BD15 /* PBXContainerItemProxy */;
 		};
+		EF3DB89A1B2AA7B800C1BD15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF3DB8831B2AA7B700C1BD15 /* TestMultiPartMime */;
+			targetProxy = EF3DB8991B2AA7B800C1BD15 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF3DB88C1B2AA7B800C1BD15 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF3DB88D1B2AA7B800C1BD15 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF3DB8911B2AA7B800C1BD15 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF3DB8921B2AA7B800C1BD15 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EF3DB86E1B2A5CC400C1BD15 /* Debug */ = {
@@ -323,6 +535,7 @@
 		EF3DB8711B2A5CC400C1BD15 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -332,12 +545,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		EF3DB8721B2A5CC400C1BD15 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -380,6 +595,64 @@
 			};
 			name = Release;
 		};
+		EF3DB8A11B2AA7B800C1BD15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TestMultiPartMime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF3DB8A21B2AA7B800C1BD15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestMultiPartMime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EF3DB8A41B2AA7B800C1BD15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TestMultiPartMimeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestMultiPartMime.app/TestMultiPartMime";
+			};
+			name = Debug;
+		};
+		EF3DB8A51B2AA7B800C1BD15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TestMultiPartMimeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestMultiPartMime.app/TestMultiPartMime";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -405,6 +678,22 @@
 			buildConfigurations = (
 				EF3DB8741B2A5CC400C1BD15 /* Debug */,
 				EF3DB8751B2A5CC400C1BD15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF3DB8A01B2AA7B800C1BD15 /* Build configuration list for PBXNativeTarget "TestMultiPartMime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF3DB8A11B2AA7B800C1BD15 /* Debug */,
+				EF3DB8A21B2AA7B800C1BD15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF3DB8A31B2AA7B800C1BD15 /* Build configuration list for PBXNativeTarget "TestMultiPartMimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF3DB8A41B2AA7B800C1BD15 /* Debug */,
+				EF3DB8A51B2AA7B800C1BD15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
