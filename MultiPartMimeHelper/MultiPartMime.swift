@@ -8,6 +8,10 @@
 
 import Foundation
 
+/**
+ An object for handling the conversion from Swift objects to multipart encoded form data
+ for uploading to web services with POST
+*/
 public class MultiPartMime {
     var boundaryString = "===0xKhTmLbOuNdArY"
     
@@ -17,6 +21,7 @@ public class MultiPartMime {
         self.dictionary = dict
     }
     
+    /// Content-Type string useful for header and for the generated data
     public var contentTypeString: String {
         return "multipart/form-data; boundary=\(self.boundaryString)"
     }
@@ -47,6 +52,7 @@ public class MultiPartMime {
         return .None
     }
     
+    /// property for the data represented by this object.
     public var multiPartData: NSData {
         var seedData = NSMutableData(data: MultiPartPart.StringWrapper("multipart/form-data; boundary=\(self.boundaryString)\r\n").data!)
         var val = reduce(map(self.dictionary, { (key, value) in self.partAsData(key, value: value) }), seedData, {
@@ -63,15 +69,15 @@ public class MultiPartMime {
 
 // This is what the data should look like:
 /*
-multipart/form-data; boundary=0xKhTmLbOuNdArY
---0xKhTmLbOuNdArY
+multipart/form-data; boundary====0xKhTmLbOuNdArY
+--===0xKhTmLbOuNdArY
 Content-Disposition: form-data; name="key1"
 
 value1
---0xKhTmLbOuNdArY
+--===0xKhTmLbOuNdArY
 Content-Disposition: form-data; name="key2"
 Content-Type: image/png
 
-deadbeef...
---0xKhTmLbOuNdArY--
+0x\89PNGdeadbeef...
+--===0xKhTmLbOuNdArY--
 */

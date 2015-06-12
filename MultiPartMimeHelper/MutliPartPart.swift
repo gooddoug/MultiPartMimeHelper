@@ -9,15 +9,31 @@
 import UIKit
 
 /**
-*  A valid part for MultiPartMime
+  A valid part for MultiPartMime
 */
 public enum MultiPartPart {
+    /**
+      Wraps a plain string
+    */
     case StringWrapper(String)
+    /**
+      wraps a UIImage for use as a PNG
+    */
     case PNGImage(UIImage, String?)
+    /**
+      wraps a UIImage for use as a JPEG
+    */
     case JPEGImage(UIImage, String?)
+    /**
+      wraps an NSData
+    */
     case Data(NSData, String?)
+    /**
+      wraps a filepath for the file to be sent
+    */
     case File(String)
     
+    /// returns the Content-Type for the wrapped part
     var contentType: String? {
         switch self {
         case StringWrapper(_):
@@ -33,6 +49,7 @@ public enum MultiPartPart {
         }
     }
     
+    /// returns the actual data for the wrapped part
     var data: NSData? {
         switch self {
         case StringWrapper(let str):
@@ -48,6 +65,7 @@ public enum MultiPartPart {
         }
     }
     
+    /// returns the file name for the wrapped part (Strings don't typically have filenames)
     public var fileName: NSString? {
         switch self {
         case StringWrapper(_):
