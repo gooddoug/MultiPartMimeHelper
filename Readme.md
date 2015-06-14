@@ -25,6 +25,17 @@ func upload(avatarPath: String, username: String, bio: String) {
 }
 ```
 
+Included in the repository is a test server in Sinatra test_app.rb
+To use, install the dependent gems:
+```shell
+gem install sinatra
+gem install haml
+```
+Then run the server:
+```shell
+ruby test_app.rb
+```
+
 ## Installing
 You can download and build the framwork yourself and add it to your project. Cocoapods support is coming soon. Finally, you can copy the MultiPartMime.swift and MultiPartPart.swift files into your project and not worry about frameworks at all.
 
