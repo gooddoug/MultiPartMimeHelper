@@ -30,11 +30,6 @@ class MultiPartMimeHelperTests: XCTestCase {
         let aMPM = MultiPartMime(dict: aDict)
         let testData = aMPM.multiPartData
         XCTAssertNotNil(testData, "multipart data should not be nil")
-//        if let aStr = NSString(data: testData, encoding: NSUTF8StringEncoding) {
-//            println(aStr)
-//        } else {
-//            println("can't print")
-//        }
     }
     
     func testStringPartAsDataAgainstKnownValue() {
@@ -58,11 +53,6 @@ class MultiPartMimeHelperTests: XCTestCase {
         let aMPM = MultiPartMime(dict:[aKey1:MultiPartPart.StringWrapper(aValue1), aKey2:MultiPartPart.StringWrapper(aValue2)])
         let testData = aMPM.multiPartData
         XCTAssertNotNil(testData, "multipart data should not be nil")
-//        if let aStr = NSString(data: testData, encoding: NSUTF8StringEncoding) {
-//            println(aStr)
-//        } else {
-//            println("can't print")
-//        }
     }
     
     func testImagePartAsData() {
@@ -71,11 +61,6 @@ class MultiPartMimeHelperTests: XCTestCase {
         let aMPM = MultiPartMime(dict:[aKey:MultiPartPart.PNGImage(aValue, nil)])
         let testData = aMPM.multiPartData
         XCTAssertNotNil(testData, "multipart data should not be nil")
-//        if let aStr = NSString(data: testData, encoding: NSUTF8StringEncoding) {
-//            println(aStr)
-//        } else {
-//            println("can't print string")
-//        }
     }
     
     func testMixedPartsAsData() {
@@ -87,11 +72,6 @@ class MultiPartMimeHelperTests: XCTestCase {
         let aMPM = MultiPartMime(dict:testDict)
         let testData = aMPM.multiPartData
         XCTAssertNotNil(testData, "multipart data should not be nil")
-//        if let aStr = NSString(data: testData, encoding: NSUTF8StringEncoding) {
-//            println(aStr)
-//        } else {
-//            println("can't print")
-//        }
     }
     
     func testDataPartAsData() {
@@ -148,11 +128,6 @@ class MultiPartMimeHelperTests: XCTestCase {
             let aMPM = MultiPartMime(dict: ["file": filePart])
             let testData = aMPM.multiPartData
             XCTAssertNotNil(testData, "multipart data should not be nil")
-//            if let aStr = NSString(data: testData, encoding: NSUTF8StringEncoding) {
-//                println(aStr)
-//            } else {
-//                println("can't print")
-//            }
         } else {
             XCTFail("Couldn't get the path")
         }

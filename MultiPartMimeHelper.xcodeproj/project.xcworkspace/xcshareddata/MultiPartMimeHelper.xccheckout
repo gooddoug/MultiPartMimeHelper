@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A794963B-CFB2-4257-8AE9-09D6C75F3717</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MultiPartMimeHelper</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>18E8D26D2C03ECAA24F7AB18E45C196DBB6E44EE</key>
+		<string>github.com:gooddoug/MultiPartMimeHelper.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MultiPartMimeHelper.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>18E8D26D2C03ECAA24F7AB18E45C196DBB6E44EE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:gooddoug/MultiPartMimeHelper.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>18E8D26D2C03ECAA24F7AB18E45C196DBB6E44EE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>18E8D26D2C03ECAA24F7AB18E45C196DBB6E44EE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MultiPartMimeHelper</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -2,6 +2,17 @@ MultiPartMimeHelper is a simple framework for encoding items into multipart data
 
 This is useful in particular for image or file upload. Most web services accept multpart encoded request bodies for file upload. This framework makes it simple to generate the mutlipart encoded data. Wrap each of the items you need to POST to the web service as a particular MultiPartPart and use those to create a MultiPartMime object.
 
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+
+## Installing
+[Carthage](https://github/com/carthage/carthage) is the recommended way to install this. Add the following to your cartfile:
+```ruby
+github "gooddoug/MultiPartMimeHelper"
+```
+
+Optionally, you can copy the MultiPartMime.swift and MultiPartPart.swift files into your project and not worry about frameworks at all.
+
+
 ## Usage
 ```swift
 import MultiPartMimeHelper
@@ -25,7 +36,7 @@ func upload(avatarPath: String, username: String, bio: String) {
 }
 ```
 
-Included in the repository is a test server in Sinatra test_app.rb
+Included in the repository is a test server written with Sinatra test_app.rb
 To use, install the dependent gems:
 ```shell
 gem install sinatra
@@ -35,9 +46,6 @@ Then run the server:
 ```shell
 ruby test_app.rb
 ```
-
-## Installing
-You can download and build the framwork yourself and add it to your project. Cocoapods support is coming soon. Finally, you can copy the MultiPartMime.swift and MultiPartPart.swift files into your project and not worry about frameworks at all.
 
 ## Contributing
 Please use pull requests if you know how to fix the issue you are having. If you can't fix the issue, please file a ticket.
