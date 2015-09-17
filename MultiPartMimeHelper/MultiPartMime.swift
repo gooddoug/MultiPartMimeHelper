@@ -27,35 +27,35 @@ public class MultiPartMime {
     }
     
     func partAsData(key: String, value: MultiPartPart) -> NSData? {
-        if let keyData = MultiPartPart.StringWrapper(key).data, let valData = value.data {
-            var mutableData = NSMutableData()
-            // boundary
-            mutableData.appendData(MultiPartPart.StringWrapper("--\(self.boundaryString)\r\n").data!)
-            // Content-Disposition: form-data; name="<key>"
-            mutableData.appendData(MultiPartPart.StringWrapper("Content-Disposition: form-data; name=\"").data!)
-            mutableData.appendData(keyData)
-            mutableData.appendData(MultiPartPart.StringWrapper("\"").data!)
-            if let fileName = value.fileName {
-                mutableData.appendData(MultiPartPart.StringWrapper("; filename=\(fileName)").data!)
-            }
-            mutableData.appendData(MultiPartPart.StringWrapper("\r\n").data!)
-            if let contentType = value.contentType {
-                // Content-type: <contentType>
-                mutableData.appendData(MultiPartPart.StringWrapper("Content-Type: \(contentType)\r\n").data!)
-            }
-            // the actual data...
-            mutableData.appendData(MultiPartPart.StringWrapper("\r\n").data!)
-            mutableData.appendData(valData)
-            mutableData.appendData(MultiPartPart.StringWrapper("\r\n").data!)
-            return mutableData
+        guard let keyData = MultiPartPart.StringWrapper(key).data, let valData = value.data else {
+            return .None
         }
-        return .None
+        let mutableData = NSMutableData()
+        // boundary
+        mutableData.appendData(MultiPartPart.StringWrapper("--\(self.boundaryString)\r\n").data!)
+        // Content-Disposition: form-data; name="<key>"
+        mutableData.appendData(MultiPartPart.StringWrapper("Content-Disposition: form-data; name=\"").data!)
+        mutableData.appendData(keyData)
+        mutableData.appendData(MultiPartPart.StringWrapper("\"").data!)
+        if let fileName = value.fileName {
+            mutableData.appendData(MultiPartPart.StringWrapper("; filename=\(fileName)").data!)
+        }
+        mutableData.appendData(MultiPartPart.StringWrapper("\r\n").data!)
+        if let contentType = value.contentType {
+            // Content-type: <contentType>
+            mutableData.appendData(MultiPartPart.StringWrapper("Content-Type: \(contentType)\r\n").data!)
+        }
+        // the actual data...
+        mutableData.appendData(MultiPartPart.StringWrapper("\r\n").data!)
+        mutableData.appendData(valData)
+        mutableData.appendData(MultiPartPart.StringWrapper("\r\n").data!)
+        return mutableData
     }
     
     /// property for the data represented by this object.
     public var multiPartData: NSData {
-        var seedData = NSMutableData(data: MultiPartPart.StringWrapper("multipart/form-data; boundary=\(self.boundaryString)\r\n").data!)
-        var val = reduce(map(self.dictionary, { (key, value) in self.partAsData(key, value: value) }), seedData, {
+        let seedData = NSMutableData(data: MultiPartPart.StringWrapper("multipart/form-data; boundary=\(self.boundaryString)\r\n").data!)
+        let val = self.dictionary.map({ (key, value) in self.partAsData(key, value: value) }).reduce(seedData, combine: {
             (acc: NSMutableData, data: NSData?) in
             if let someData = data {
                 acc.appendData(someData)

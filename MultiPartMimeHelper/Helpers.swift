@@ -8,6 +8,6 @@
 
 import Foundation
 
-public func undefined<T>(_ msg: String = "") -> T {
+public func undefined<T>(msg: String = "") -> T {
     fatalError("undefined: \(msg)")
 }

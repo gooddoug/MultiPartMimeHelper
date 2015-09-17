@@ -15,11 +15,11 @@ class ViewController: UIViewController, NSURLConnectionDelegate {
         super.viewDidLoad()
         let img = UIImage(named: "ring")!
         let multiPartMime = MultiPartMime(dict: ["name":MultiPartPart.StringWrapper("ring.png"), "file":MultiPartPart.PNGImage(img, "ring.png")])
-        var req = NSMutableURLRequest(URL: NSURL(string:"http://localhost:4567/upload")!)
+        let req = NSMutableURLRequest(URL: NSURL(string:"http://localhost:4567/upload")!)
         req.HTTPMethod = "POST"
         req.HTTPBody = multiPartMime.multiPartData
         req.setValue(multiPartMime.contentTypeString, forHTTPHeaderField:"Content-Type")
-        var conn = NSURLConnection(request: req, delegate: self, startImmediately: true)
+        _ = NSURLConnection(request: req, delegate: self, startImmediately: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,11 +28,11 @@ class ViewController: UIViewController, NSURLConnectionDelegate {
     }
 
     func connectionDidFinishLoading(connection: NSURLConnection) {
-        println("yay")
+        print("yay")
     }
     
     func connection(connection: NSURLConnection, didFailWithError error: NSError) {
-        println("dammit")
+        print("dammit")
     }
 }
 

@@ -38,13 +38,13 @@ public enum MultiPartPart {
         switch self {
         case StringWrapper(_):
             return .None
-        case PNGImage(let img):
+        case PNGImage( _):
             return .Some("image/png")
-        case JPEGImage(let img):
+        case JPEGImage( _):
             return .Some("image/jpeg")
-        case Data(let d):
+        case Data( _):
             return .Some("application/octet-stream")
-        case File(let d):
+        case File( _):
             return .Some("application/octet-stream")
         }
     }
@@ -77,7 +77,7 @@ public enum MultiPartPart {
         case Data(_, let name):
             return name
         case File(let path):
-            return path.lastPathComponent
+            return NSURL(fileURLWithPath:path).lastPathComponent
         }
     }
 }

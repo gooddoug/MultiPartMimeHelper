@@ -26,7 +26,7 @@ class MultiPartMimeHelperTests: XCTestCase {
     func testStringPartAsData() {
         let aKey = "string"
         let aValue = "this is a string"
-        let aDict: Dictionary<String, MultiPartPart> = ["test":MultiPartPart.StringWrapper("test value")]
+        let aDict: Dictionary<String, MultiPartPart> = [aKey:MultiPartPart.StringWrapper(aValue)]
         let aMPM = MultiPartMime(dict: aDict)
         let testData = aMPM.multiPartData
         XCTAssertNotNil(testData, "multipart data should not be nil")
