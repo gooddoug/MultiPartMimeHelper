@@ -3,7 +3,7 @@
 //  MultiPartMimeHelper
 //
 //  Created by Doug Whitmore on 6/11/15.
-//  Copyright (c) 2015 Good Doug. All rights reserved.
+//  Copyright (c) 2015-2016 Good Doug. All rights reserved.
 //
 
 import Foundation
@@ -12,7 +12,7 @@ import Foundation
  An object for handling the conversion from Swift objects to multipart encoded form data
  for uploading to web services with POST
 */
-public class MultiPartMime {
+open class MultiPartMime {
     var boundaryString = "===0xKhTmLbOuNdArY"
     
     let dictionary: Dictionary<String, MultiPartPart>
@@ -22,47 +22,48 @@ public class MultiPartMime {
     }
     
     /// Content-Type string useful for header and for the generated data
-    public var contentTypeString: String {
+    open var contentTypeString: String {
         return "multipart/form-data; boundary=\(self.boundaryString)"
     }
     
-    func partAsData(key: String, value: MultiPartPart) -> NSData? {
-        guard let keyData = MultiPartPart.StringWrapper(key).data, let valData = value.data else {
-            return .None
+    func partAsData(_ key: String, value: MultiPartPart) -> Data? {
+        guard let keyData = MultiPartPart.stringWrapper(key).data, let valData = value.data else {
+            return .none
         }
-        let mutableData = NSMutableData()
+        var mutableData = Data()
         // boundary
-        mutableData.appendData(MultiPartPart.StringWrapper("--\(self.boundaryString)\r\n").data!)
+        mutableData.append(MultiPartPart.stringWrapper("--\(self.boundaryString)\r\n").data!)
         // Content-Disposition: form-data; name="<key>"
-        mutableData.appendData(MultiPartPart.StringWrapper("Content-Disposition: form-data; name=\"").data!)
-        mutableData.appendData(keyData)
-        mutableData.appendData(MultiPartPart.StringWrapper("\"").data!)
+        mutableData.append(MultiPartPart.stringWrapper("Content-Disposition: form-data; name=\"").data!)
+        mutableData.append(keyData)
+        mutableData.append(MultiPartPart.stringWrapper("\"").data!)
         if let fileName = value.fileName {
-            mutableData.appendData(MultiPartPart.StringWrapper("; filename=\(fileName)").data!)
+            mutableData.append(MultiPartPart.stringWrapper("; filename=\(fileName)").data!)
         }
-        mutableData.appendData(MultiPartPart.StringWrapper("\r\n").data!)
+        mutableData.append(MultiPartPart.stringWrapper("\r\n").data!)
         if let contentType = value.contentType {
             // Content-type: <contentType>
-            mutableData.appendData(MultiPartPart.StringWrapper("Content-Type: \(contentType)\r\n").data!)
+            mutableData.append(MultiPartPart.stringWrapper("Content-Type: \(contentType)\r\n").data!)
         }
         // the actual data...
-        mutableData.appendData(MultiPartPart.StringWrapper("\r\n").data!)
-        mutableData.appendData(valData)
-        mutableData.appendData(MultiPartPart.StringWrapper("\r\n").data!)
-        return mutableData
+        mutableData.append(MultiPartPart.stringWrapper("\r\n").data!)
+        mutableData.append(valData as Data)
+        mutableData.append(MultiPartPart.stringWrapper("\r\n").data!)
+        return mutableData as Data
     }
     
     /// property for the data represented by this object.
-    public var multiPartData: NSData {
-        let seedData = NSMutableData(data: MultiPartPart.StringWrapper("multipart/form-data; boundary=\(self.boundaryString)\r\n").data!)
-        let val = self.dictionary.map({ (key, value) in self.partAsData(key, value: value) }).reduce(seedData, combine: {
-            (acc: NSMutableData, data: NSData?) in
+    open var multiPartData: Data {
+        let seedData = MultiPartPart.stringWrapper("multipart/form-data; boundary=\(self.boundaryString)\r\n").data!
+        var val = self.dictionary.map({ (key, value) in self.partAsData(key, value: value) }).reduce(seedData, {
+            (acc: Data, data: Data?) in
+            var redVal = acc
             if let someData = data {
-                acc.appendData(someData)
+                redVal.append(someData)
             }
-            return acc
+            return redVal
         })
-        val.appendData(MultiPartPart.StringWrapper("--\(self.boundaryString)--\r\n").data!)
+        val.append(MultiPartPart.stringWrapper("--\(self.boundaryString)--\r\n").data!)
         return val
     }
 }

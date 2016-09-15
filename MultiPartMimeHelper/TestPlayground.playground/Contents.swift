@@ -5,10 +5,15 @@ import MultiPartMimeHelper
 
 var str = "Hello, playground"
 
-let aDict = ["test":MultiPartPart.StringWrapper("test value")]
+let aDict = ["test":MultiPartPart.stringWrapper("test value")]
 
 let mpm = MultiPartMime(dict: aDict)
 
 let val = mpm.multiPartData
 
-let newStr = NSString(data: val, encoding: NSUTF8StringEncoding)
+let newString = String(data: val, encoding: .utf8)
+
+let str1 = "Foo"
+let str2 = "Foo"
+
+let isEqual = str1 == str2
