@@ -3,7 +3,7 @@
 //  MultiPartMimeHelper
 //
 //  Created by Doug Whitmore on 6/11/15.
-//  Copyright (c) 2015-2016 Good Doug. All rights reserved.
+//  Copyright (c) 2015-2019 Good Doug. All rights reserved.
 //
 
 import UIKit
@@ -25,7 +25,7 @@ public enum MultiPartPart {
     */
     case jpegImage(UIImage, String?)
     /**
-      wraps an Data
+      wraps a Data
     */
     case Data(Foundation.Data, String?)
     /**
@@ -55,9 +55,9 @@ public enum MultiPartPart {
         case .stringWrapper(let str):
             return str.data(using: String.Encoding.utf8, allowLossyConversion: false)
         case .pngImage(let img, _):
-            return UIImagePNGRepresentation(img)
+            return img.pngData()
         case .jpegImage(let img, _):
-            return UIImageJPEGRepresentation(img, 1.0)
+            return img.jpegData(compressionQuality:1)
         case .Data(let d, _):
             return .some(d)
         case .file(let path):

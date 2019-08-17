@@ -3,7 +3,7 @@
 //  MultiPartMimeHelperTests
 //
 //  Created by Doug Whitmore on 6/11/15.
-//  Copyright (c) 2015-2016 Good Doug. All rights reserved.
+//  Copyright (c) 2015-2019 Good Doug. All rights reserved.
 //
 
 import UIKit
@@ -38,11 +38,11 @@ class MultiPartMimeHelperTests: XCTestCase {
         let aMPM = MultiPartMime(dict: [aKey: MultiPartPart.stringWrapper(aValue)])
         let testData = aMPM.multiPartData
         XCTAssertNotNil(testData, "multipart data should not be nil")
-        if let aStr = String(data: testData, encoding: .utf8) {
-            XCTAssertEqual(aStr, exampleString, "Strings should be equal:\n \(aStr) \n \(exampleString)")
-        } else {
+        guard let aStr = String(data: testData, encoding: .utf8) else {
             XCTFail("shouldn't get a nil string from the testData")
+            return
         }
+        XCTAssertEqual(aStr, exampleString, "Strings should be equal:\n \(aStr) \n \(exampleString)")
     }
     
     func testMultiStringPartAsData() {
@@ -110,26 +110,28 @@ class MultiPartMimeHelperTests: XCTestCase {
     
     func testNoName() {
         let imagePart = MultiPartPart.pngImage(simpleImage(), nil)
-        XCTAssertNil(imagePart.fileName, "fileName should be nil \(imagePart.fileName)")
+        XCTAssertNil(imagePart.fileName, "fileName should be nil \(String(describing: imagePart.fileName))")
         let aValue = "this is a string".data(using: String.Encoding.utf8, allowLossyConversion: false)!
         let dataPart = MultiPartPart.Data(aValue, nil)
-        XCTAssertNil(dataPart.fileName, "data fileName should be nil: \(dataPart.fileName)")
+        XCTAssertNil(dataPart.fileName, "data fileName should be nil: \(String(describing: dataPart.fileName))")
     }
     
     func testFilePartAsData() {
         let fileName = "ring.png"
         let testBundle = Bundle(for: type(of: self))
-        if let path = testBundle.path(forResource: "ring", ofType: "png") {
-            let filePart = MultiPartPart.file(path)
-            let computedName = filePart.fileName
-            XCTAssertNotNil(computedName, "name shouldn't be nil")
-            XCTAssertEqual(computedName!, fileName, "Name should be the same as what we passed in")
-            
-            let aMPM = MultiPartMime(dict: ["file": filePart])
-            let testData = aMPM.multiPartData
-            XCTAssertNotNil(testData, "multipart data should not be nil")
-        } else {
+        guard let path = testBundle.path(forResource: "ring", ofType: "png") else {
             XCTFail("Couldn't get the path")
+            return
         }
+
+        let filePart = MultiPartPart.file(path)
+        let computedName = filePart.fileName
+        XCTAssertNotNil(computedName, "name shouldn't be nil")
+        XCTAssertEqual(computedName!, fileName, "Name should be the same as what we passed in")
+        
+        let aMPM = MultiPartMime(dict: ["file": filePart])
+        let testData = aMPM.multiPartData
+        XCTAssertNotNil(testData, "multipart data should not be nil")
+        
     }
 }

@@ -4,7 +4,7 @@ This is useful in particular for image or file upload. Most web services accept 
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-Updated for Swift 3, updated to be pure Swift, no reliance on platform specific code.
+Updated for Swift 5, updated to be pure Swift, no reliance on platform specific code.
 
 ## Installing
 [Carthage](https://github/com/carthage/carthage) is the recommended way to install this. Add the following to your cartfile:
