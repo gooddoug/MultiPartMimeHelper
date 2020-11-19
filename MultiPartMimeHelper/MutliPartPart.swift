@@ -38,14 +38,14 @@ public enum MultiPartPart {
         switch self {
         case .stringWrapper(_):
             return .none
-        case .pngImage( _):
-            return .some("image/png")
-        case .jpegImage( _):
-            return .some("image/jpeg")
-        case .Data( _):
-            return .some("application/octet-stream")
+        case .pngImage( _, _):
+            return "image/png"
+        case .jpegImage( _, _):
+            return "image/jpeg"
+        case .Data( _, _):
+            return "application/octet-stream"
         case .file( _):
-            return .some("application/octet-stream")
+            return "application/octet-stream"
         }
     }
     
